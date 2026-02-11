@@ -1,6 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { createRoot } from 'react-dom/client';
-import { UploadIcon, FileIcon, SpinnerIcon, CheckIcon } from './components/Icons';
+import { UploadIcon, FileIcon, SpinnerIcon, CheckIcon, GithubIcon, InstagramIcon } from './components/Icons';
 import { FileCard } from './components/FileCard';
 import { FileItem, ProcessStatus } from './types';
 import { analyzeImage } from './services/geminiService';
@@ -296,6 +296,45 @@ const App = () => {
         )}
 
       </main>
+
+      {/* Footer - Copyright & Socials */}
+      <footer className="w-full border-t border-white/10 bg-cyber-black/90 backdrop-blur z-20 py-6 mt-auto">
+        <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6">
+              <p className="text-xs text-gray-500 font-mono tracking-wide">
+                 © 2025 PersianAI OCR
+              </p>
+              <div className="hidden md:block w-px h-4 bg-white/10"></div>
+              <p className="text-xs text-gray-400 font-mono">
+                 Developed by <span className="text-cyber-primary font-bold">JENOVAS</span>
+              </p>
+           </div>
+           
+           <div className="flex items-center gap-4">
+               <a 
+                 href="https://github.com/JENOVASir" 
+                 target="_blank" 
+                 rel="noreferrer"
+                 className="p-2 text-gray-500 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 group relative"
+                 title="GitHub"
+               >
+                 <GithubIcon className="w-5 h-5" />
+                 <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-cyber-primary text-black text-[10px] font-bold px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">JENOVASir</span>
+               </a>
+               
+               <a 
+                 href="https://instagram.com/ME.AND.GODS" 
+                 target="_blank" 
+                 rel="noreferrer"
+                 className="p-2 text-gray-500 hover:text-pink-500 hover:bg-pink-500/10 rounded-lg transition-all duration-300 group relative"
+                 title="Instagram"
+               >
+                 <InstagramIcon className="w-5 h-5" />
+                 <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-pink-500 text-white text-[10px] font-bold px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">@ME.AND.GODS</span>
+               </a>
+           </div>
+        </div>
+      </footer>
     </div>
   );
 };

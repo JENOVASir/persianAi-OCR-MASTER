@@ -1,5 +1,5 @@
 import React from 'react';
-import { Upload, FileText, CheckCircle, AlertCircle, Loader2, Download, Trash2, FileImage, RefreshCw, Eye, ChevronDown, ChevronUp } from 'lucide-react';
+import { Upload, FileText, CheckCircle, AlertCircle, Loader2, Download, Trash2, FileImage, RefreshCw, Eye, ChevronDown, ChevronUp, Github, Instagram } from 'lucide-react';
 
 export const UploadIcon = ({ className }: { className?: string }) => <Upload className={className} />;
 export const FileIcon = ({ className }: { className?: string }) => <FileText className={className} />;
@@ -13,3 +13,5 @@ export const RetryIcon = ({ className }: { className?: string }) => <RefreshCw c
 export const EyeIcon = ({ className }: { className?: string }) => <Eye className={className} />;
 export const ChevronDownIcon = ({ className }: { className?: string }) => <ChevronDown className={className} />;
 export const ChevronUpIcon = ({ className }: { className?: string }) => <ChevronUp className={className} />;
+export const GithubIcon = ({ className }: { className?: string }) => <Github className={className} />;
+export const InstagramIcon = ({ className }: { className?: string }) => <Instagram className={className} />;

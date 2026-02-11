@@ -373,13 +373,20 @@ export const generateDocx = async (item: FileItem) => {
     }
   }
 
-  // --- 3. Footer ---
+  // --- 3. Footer (Updated with Copyright) ---
   docChildren.push(
       new Paragraph({
-          text: "استخراج شده توسط هوش مصنوعی PersianAI",
+          children: [
+            new TextRun({ 
+              text: "Developed by JENOVAS | GitHub: JENOVASir", 
+              font: "Consolas", 
+              size: 16,
+              color: "64748B"
+            })
+          ],
           alignment: AlignmentType.CENTER,
           spacing: { before: 600 },
-          run: { color: "94A3B8", size: 16, font: "Tahoma" }
+          border: { top: { color: "E2E8F0", space: 10, style: BorderStyle.SINGLE, size: 4 } }
       })
   );
 
