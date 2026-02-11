@@ -1,0 +1,5 @@
+{
+  "name": "PersianAI OCR Master",
+  "description": "An advanced, analysis-driven Persian OCR application using Gemini AI to extract text, math formulas, and charts from images and export them to professional Word documents.",
+  "requestFramePermissions": []
+}
