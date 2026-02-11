@@ -1,17 +1,62 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+<img src="./assets/banner.png" alt="OCR Engine Banner" width="100%" />
+
+# PersianAI OCR Engine
+
+High-Precision AI-Powered Text Extraction Platform  
+With Mathematical Symbol & LaTeX Recognition
+
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 🔎 Overview
 
-View your app in AI Studio: https://ai.studio/apps/drive/1AVTieOrBMzqQIfz2qGPV_azSWsSfmnKy
+PersianAI OCR Engine is an advanced web-based OCR platform designed for high-accuracy text extraction from images.
 
-## Run Locally
+Unlike traditional OCR systems, this application leverages state-of-the-art AI models to accurately recognize:
 
-**Prerequisites:**  Node.js
+- 📐 Mathematical equations
+- 🔣 Scientific symbols
+- 🧮 LaTeX expressions
+- 📄 Structured documents
+- ✍️ Persian & multilingual text
 
+Extracted content can be exported directly into **Microsoft Word (.docx)** format for seamless editing and publishing.
+
+---
+
+## ✨ Core Features
+
+- 🧠 AI-powered OCR engine
+- 📐 Math & LaTeX recognition
+- 📄 Word (.docx) export
+- ⚡ Fast image processing
+- 🌐 Modern responsive UI
+- 🔐 Secure API key handling
+
+---
+
+## 🏗 Architecture
+
+The application is built as a modern web app using:
+
+- Node.js
+- JavaScript / TypeScript
+- Google Generative AI API
+- Document generation utilities
+
+Environment-based API configuration ensures security and flexibility.
+
+---
+
+## ⚙️ Installation
+
+### Prerequisites
+- Node.js (v18+ recommended)
+
+  
 
 1. Install dependencies:
    `npm install`
